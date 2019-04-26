@@ -1,0 +1,7 @@
+<?php ContentHandler::getHeader($config, 'vitamins');?>
+<div class="page-title">Vitaminer</div>
+<div class="dashed-wrapper">
+    <p>Vi känner i dag till 13 vitaminer som är essentiella, livsnödvändiga, vilket innebär att vi regelbundet måste få i oss dem via maten eftersom kroppen inte själv kan producera dem. Fyra vitaminer är fettlösliga - A, D, E och K - och finns mest i feta livsmedel som oljor, mjölk, fet fisk. Nio vitaminer är vattenlösliga: Vitamin C och åtta B-vitaminer. Vitamin C finns mest i frukt och grönsaker och B-vitaminer finns mest i kött, fågel, grönsaker och spannmål.</p>
+    <p>För lite vitaminer ger olika bristsjukdomar, men är i dag sällsynt i Sverige. Det finns dock en risk för att äldre och barn får för lite D-vitamin och att kvinnor före och under sin graviditet har brist på folat. Dessa grupper kan därför behöva tillskott. Det är viktigt att barn under de första två åren får tillskott av vitamin D. På senare år har de fall av rakit, engelska sjukan, som upptäckts i Sverige bara gällt barn som inte fått extra vitamin D. Många kvinnor får i dag i sig för lite folat. Eftersom inte alla graviditeter är planerade rekommenderas att alla kvinnor som kan tänkas bli gravida ska äta tillskott av folsyra.</p>
+</div>
+<?php ContentHandler::getFooter();?>

@@ -1,0 +1,132 @@
+@font-face {
+    font-family: FreestyleScript;
+    src: url(../fonts/FreestyleScript.ttf);}
+
+:root {
+    --font-size-default: 13px;
+    --font-size-large: 16px;
+    --font-color-light: #666;
+    --font-header: FreestyleScript, sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --text-shadow-default: 1px 1px 0 rgba(0,0,0,0.9);
+    --color-orange-default: #FF7519;
+    --color-orange-dark: #E65C00;
+    --border-radius-default: 3px;}
+
+header {
+    background:linear-gradient(180deg, var(--color-orange-default) 0%, var(--color-orange-dark) 100%);
+    height: 48px;
+    font-size: 0;}
+.header-text {
+    width: calc(50% - 14px);
+    display: inline-block;
+    vertical-align: top;
+    color: #FFF;
+    font-family: var(--font-header);
+    font-weight: normal;
+    text-shadow: var(--text-shadow-default);
+    padding: 2px 0 0 14px;
+    font-size: 36px;}
+header nav {
+    padding-top: 4px;
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;}
+footer {
+    text-shadow: none;
+    text-align: center;
+    color:#FFF;
+    background:linear-gradient(180deg, var(--color-orange-default) 0%, var(--color-orange-dark) 100%);
+    height: 48px;}
+h1 {
+    font-weight: normal;
+    font-family: var(--font-header);}
+p {
+    margin: 7px 0 7px 0;}
+#intro-page {
+    background:linear-gradient(180deg, var(--color-orange-default) 0%, var(--color-orange-dark) 100%);
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: var(--text-shadow-default);
+    color: #FFF;}
+#intro-page img {
+    margin: 40px auto 10px auto;
+    width: 84px;}
+#intro-page h1 {
+    margin: 0;
+    font-size: 42px;}
+#intro-page p {
+    margin-top:8px;}
+.text-align-center {
+    text-align: center;}
+.dashed-wrapper {
+    margin: 8px 0 16px 0;
+    background:#F5F5F5;
+    padding: 10px;
+    border: 1px dashed #CCC;
+    border-radius: var(--border-radius-default);}
+.page-title {
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-orange-default);}
+.search-result-item {
+    line-height: 1.6;
+    background: #f2f2f2;}
+.search-result-item:nth-of-type(odd) {
+    background: #e8e8e8;}
+.search-result-item table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    font-size: var(--font-size-default);}
+.search-result-item table tbody {
+    display: none;}
+.search-result-item-open table tbody {
+    display: table-row-group;}
+.search-result-item table tbody tr:nth-child(odd) {
+    background: rgba(255,255,255,0.5);}
+.search-result-item table td, .search-result-item table th {
+    text-align: left;
+    font-weight: normal;
+    padding: 9px 7px 9px 7px;}
+.search-result-item table td:nth-of-type(2), .search-result-item table th:nth-of-type(2) {
+    width: 60px;
+    white-space: nowrap;
+    text-align: right;}
+.search-result-item table th span {
+    margin-left: 28px;}
+.search-result-empty {
+    text-align: center;
+    margin-top: 14px;}
+#info-page .ui-btn.custom-button {
+    color: #FFF;
+    text-align: left;}
+.ui-page {
+    font-size: var(--font-size-default);
+    font-family: var(--font-body);
+    color: #333;}
+div.ui-btn.custom-button, a.ui-btn.custom-button, .ui-page-theme-a div.ui-btn:hover {
+    font-size: var(--font-size-default);
+    font-family: var(--font-body);
+    padding-right: 14px;
+    color: #FFF;
+    text-shadow: none;
+    border-radius: var(--border-radius-default);
+    border: none;
+    background:linear-gradient(180deg, var(--color-orange-default) 0%, var(--color-orange-dark) 100%);}
+div.ui-input-text input, div.ui-input-search input {
+    font-family: var(--font-body);
+    text-align: center;}
+.ui-header a.ui-btn-icon-notext {
+    margin-right: 12px;
+    font-size: var(--font-size-default);}
+ui-shadow,
+.ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a, .ui-body-b, .ui-btn-up-b, .ui-btn-hover-b, .ui-btn-down-b, .ui-bar-c, .ui-body-c, .ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c, .ui-bar-c, .ui-body-d, .ui-btn-up-d, .ui-btn-hover-d, .ui-btn-down-d, .ui-bar-d, .ui-body-e, .ui-btn-up-e, .ui-btn-hover-e, .ui-btn-down-e, .ui-bar-e, .ui-body-f, .ui-btn-up-f, .ui-btn-hover-f, .ui-btn-down-f, .ui-bar-f, .ui-body-g, .ui-btn-up-g, .ui-btn-hover-g, .ui-btn-down-g, .ui-bar-g, .ui-overlay-shadow, .ui-shadow, .ui-btn-active, .ui-body-a, .ui-bar-a, .ui-page, #infoLink {
+    text-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border:none;}
+
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+    text-align:center;}
