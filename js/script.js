@@ -1,15 +1,3 @@
-$(document).ready(function(){
-    
-    app.toggleIntro();
-    
-    $("#search-page").on("keyup", ".search-input", app.xmlRequest);
-    
-    $("#search-page").on("click", ".clear-button", app.clearResult);
-    
-    $("#search-page").on("click", ".search-result-item table thead", app.toggleFoodContent);
-    
-});
-
 var app = {
     toggleIntro: function() {
         if (window.location.hash == ''){
@@ -51,4 +39,16 @@ var app = {
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
     }
-}
+};
+
+$(document).ready(function(){
+    
+    app.toggleIntro();
+    
+    $("#search-page").on("keyup", ".search-input", app.xmlRequest);
+    
+    $("#search-page").on("click", ".clear-button", app.clearResult);
+    
+    $("#search-page").on("click", ".search-result-item table thead", app.toggleFoodContent);
+    
+});
