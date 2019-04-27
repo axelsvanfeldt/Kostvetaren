@@ -11,4 +11,4 @@ The application is written in PHP and designed to be viewed on mobile devices or
 As mentioned above, Kostvetaren is written in PHP and requires an Apache HTTP Server - with an SQL database - to run.
 The structure of the SQL table can be imported via kostvetaren.sql, which also contains more than 2,100 entries with different types of foods and dishes.
 
-Livsmedelsverket (The Swedish National Food Agency) updates the data source daily, and the database can easily be updated by running the file `get-data.php`, either manually or with a cron job.
+Livsmedelsverket (The Swedish National Food Agency) updates the data source daily. The SQL database can be updated accordingly by running the file `get-data.php`, either manually or with a daily cron job.
