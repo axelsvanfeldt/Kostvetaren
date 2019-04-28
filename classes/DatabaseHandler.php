@@ -6,8 +6,12 @@ class DatabaseHandler {
                 "complete" => FALSE,
                 "result" => FALSE,
             );
-            if ($config["database_connection"]) {
-                $stmt = $config["database_connection"]->prepare($sql);
+            $connection = new PDO("mysql:host=" . $config["database"]["host"] . ";dbname=" . $config["database"]["database"], $config["database"]["username"], $config["database"]["password"], array(
+                PDO::ATTR_EMULATE_PREPARES => false,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+            ));            
+            if ($connection) {
+                $stmt = $connection->prepare($sql);
                 $stmt->execute($params);
                 $errorInfo = $stmt->errorInfo()[2];
                 if (!is_null($errorInfo)) {
