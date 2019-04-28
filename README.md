@@ -12,3 +12,5 @@ As mentioned above, Kostvetaren is written in PHP and requires an Apache HTTP Se
 The structure of the SQL table can be imported via kostvetaren.sql, which also contains more than 2,100 entries with different types of foods and dishes.
 
 Livsmedelsverket (The Swedish National Food Agency) updates the data source daily. The SQL database can be updated accordingly by running the file `get-data.php`, either manually or with a daily cron job.
+
+*Remember to edit the database values in `config/config.php` to match your own settings!*
