@@ -42,13 +42,9 @@ var app = {
 };
 
 $(document).ready(function(){
-    
     app.toggleIntro();
-    
     $("#search-page").on("keyup", ".search-input", app.xmlRequest);
-    
     $("#search-page").on("click", ".clear-button", app.clearResult);
-    
     $("#search-page").on("click", ".search-result-item table thead", app.toggleFoodContent);
     
 });
