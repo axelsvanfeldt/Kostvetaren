@@ -16,17 +16,17 @@ var app = {
         item.hasClass("search-result-item-open") ? app.hideFoodContent(item, icon) : app.showFoodContent(item, icon);
     },
     showFoodContent: function(item, icon) {
-            $(".search-result-item").css("display", "none");
-            item.css("display", "block");
-            item.addClass("search-result-item-open");
-            icon.removeClass("ui-icon-plus");
-            icon.addClass("ui-icon-delete");       
+        $(".search-result-item").css("display", "none");
+        item.css("display", "block");
+        item.addClass("search-result-item-open");
+        icon.removeClass("ui-icon-plus");
+        icon.addClass("ui-icon-delete");       
     },
     hideFoodContent: function(item, icon) {
-            $(".search-result-item").css("display", "block");
-            item.removeClass("search-result-item-open");
-            icon.removeClass("ui-icon-delete");
-            icon.addClass("ui-icon-plus");        
+        $(".search-result-item").css("display", "block");
+        item.removeClass("search-result-item-open");
+        icon.removeClass("ui-icon-delete");
+        icon.addClass("ui-icon-plus");        
     },
     xmlRequest: function() {
         var url = "content/results.php?q=" + $(".search-input").val();
@@ -46,5 +46,4 @@ $(document).ready(function(){
     $("#search-page").on("keyup", ".search-input", app.xmlRequest);
     $("#search-page").on("click", ".clear-button", app.clearResult);
     $("#search-page").on("click", ".search-result-item table thead", app.toggleFoodContent);
-    
 });
