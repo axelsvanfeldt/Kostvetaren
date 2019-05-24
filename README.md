@@ -2,7 +2,8 @@
 
 Kostvetaren is a web application designed to help you find out what different foods and dishes actually contains. The data is collected from Livsmedelsverket (The Swedish National Food Agency) and provides more than 2,100 different types of foods and dishes along with more detailed information on how different substances affects your body.
 
-The application is written in PHP and designed to be viewed on mobile devices or tablets. Written long before ECMAScript 2015 was a thing, Kostvetaren is written in classic Javascript without any Babel or Webpack configurations.
+The application is written in PHP and designed to be viewed on mobile devices or tablets.
+Written long before ECMAScript 2015 was a thing, Kostvetaren is written in ~~ancient~~ classic Javascript without any Babel or Webpack configurations.
 
 *Note that Kostvetaren is displayed in Swedish!*
 
